@@ -22,8 +22,8 @@ func main() {
 	})
 
 	if err := server.Run(); err != nil {
-		log.Fatal("Failed to run HTTP server:  ", err)
-		panic(err)
+		log.Fatal("Failed to run HTTP server:", err)
+		log.Fatal(err)
 	}
 
 	log.Println("server has been stopped")

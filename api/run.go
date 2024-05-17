@@ -21,9 +21,9 @@ func New(option Option) *gin.Engine {
 	})
 
 	router.POST("/create-album", handler.CreateAlbumHandler)
-	router.GET("/get-album-by/:title", handler.GetAlbumByTitleHandler)
-	router.GET("/get-album-by/:artist", handler.GetAlbumByArtistHandler)
-	router.GET("/get-album-by/:price", handler.GetAlbumByPriceHandler)
+	router.GET("/get-album-by-title/:title", handler.GetAlbumByTitleHandler)
+	router.GET("/get-album-by-artist/:artist", handler.GetAlbumByArtistHandler)
+	router.GET("/get-album-by-price/:price", handler.GetAlbumByPriceHandler)
 	router.POST("/get-album-by-given-interval", handler.GetAlbumByGivenPriceIntervalHandler)
 
 	return router

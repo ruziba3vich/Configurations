@@ -6,3 +6,11 @@ type Album struct {
 	Artist string  `json:"artist"`
 	Price  float64 `json:"price"`
 }
+
+func (a *Album) GetId() int {
+	return a.id
+}
+
+func (a *Album) SetId(id int) {
+	a.id = id
+}
